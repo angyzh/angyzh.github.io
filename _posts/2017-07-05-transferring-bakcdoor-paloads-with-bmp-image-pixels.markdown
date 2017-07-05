@@ -1,5 +1,5 @@
 ---
-layout:post 
+layout: post
 title:  "用BMP图像像素传输后门有效载荷(翻译)"
 date:   2017-07-05 16:12:16 +0800
 categories: security
