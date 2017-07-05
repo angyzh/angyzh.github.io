@@ -11,11 +11,11 @@ categories: security
 
 
 正如你所看到的图片1，图片是黑色的背景加上红色的线，你有从图片中发现有什么错误的或者不正常的地方吗？
-![图片1](raw.githubusercontent.com/angyzh/angyzh.github.io/blob/master/images/bmp1.png)  
+![图片1](https://github.com/angyzh/angyzh.github.io/blob/master/images/bmp1.png?raw=true)  
 图片1
 
 图片2向你展示了图片中不正常的地方
-![图片2](raw.githubusercontent.com/angyzh/angyzh.github.io/blob/master/images/bmp2.png)  
+![图片2](https://github.com/angyzh/angyzh.github.io/blob/master/images/bmp2.png?raw=true)  
 图片2 恶意软件的有效载荷注入在图片像素的后面
 
 
