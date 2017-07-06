@@ -207,8 +207,14 @@ it means 0 …. 169 Pixels in MS Paint like picture 10.
 
 最后，这个技术不是新的，但我认为目前没有人关心这个威胁，但这真的很危险。 我们应该特别检查我们的防病毒，因为它也可以在BMP文件中使用加密的有效载荷，然后对于大多数AV来说它真的不可检测。 或者有效载荷可以分块到多个BMP文件中，然后它比没有任何混淆更危险，我认为默认情况下，大多数AV不会实时扫描BMP扩展文件或文件系统手动扫描。 另外我不认为他们可以检测BMP文件中的这个有效载荷（应该逐个检查AV），如果有人使用这种技术进行渗出，意味着传输数据（不使用BMP文件中的后门有效载荷，但只是 在BMP文件中添加数据），那么我们可以做什么作为捍卫者，以及如何检测这种渗出方法？ （现在检查你的AV）
 
+
+
 原文连接: [Transferring Backdoor Payloads with BMP Image Pixels][src-url]
 
 [src-url]:  https://www.peerlyst.com/posts/transferring-backdoor-payloads-with-bmp-image-pixels-damon-mohammadbagher?utm_source=twitter&utm_medium=social&utm_content=peerlyst_post&utm_campaign=peerlyst_resource
+
+推荐一篇关于利用JPEG文件格式隐藏payload[here][here]
+
+[here]:https://3gstudent.github.io/3gstudent.github.io/%E9%9A%90%E5%86%99%E6%8A%80%E5%B7%A7-%E5%88%A9%E7%94%A8JPEG%E6%96%87%E4%BB%B6%E6%A0%BC%E5%BC%8F%E9%9A%90%E8%97%8Fpayload/
 
 
