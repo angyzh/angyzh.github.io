@@ -213,7 +213,7 @@ it means 0 …. 169 Pixels in MS Paint like picture 10.
 
 [src-url]:  https://www.peerlyst.com/posts/transferring-backdoor-payloads-with-bmp-image-pixels-damon-mohammadbagher?utm_source=twitter&utm_medium=social&utm_content=peerlyst_post&utm_campaign=peerlyst_resource
 
-推荐一篇关于利用JPEG文件格式隐藏payload[here][here]
+推荐一篇关于利用JPEG文件格式隐藏payload的文章 [here][here]
 
 [here]:https://3gstudent.github.io/3gstudent.github.io/%E9%9A%90%E5%86%99%E6%8A%80%E5%B7%A7-%E5%88%A9%E7%94%A8JPEG%E6%96%87%E4%BB%B6%E6%A0%BC%E5%BC%8F%E9%9A%90%E8%97%8Fpayload/
 
